@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang=""><head><style>
+  @import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+
+  :root {
+    --container-color: #5c5f7750;
+    --content-color: #eff1f5;
+    --border-color: #ccd0da10;
+    --link-color: #7287fd;
+  }
+  body {
+    background-color: gainsboro;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    background-image: url("images/catpuccin_bridge_digital_art-2275394-946995519.jpg");
+  }
+  body>* {
+    font-family: "Play", sans-serif;
+  }
+  #container {
+    display: flex;
+    flex-direction: row;
+    width: 98vw;
+    height: 95vh;
+    padding: 10px;
+  }
+  #container>div {
+    background-color: var(--container-color);
+    border: 5px solid var(--border-color);
+    backdrop-filter: blur(5px);
+
+    border-radius: 24px;
+    height: 100%;
+    margin: 10px;
+    padding-inline: 25px;
+
+    display: flex;
+    flex-direction: column;
+  }
+  #container>div>* {
+    color: var(--content-color);
+
+    display: flex;
+    flex-direction: column;
+  }
+  #section-container {
+    flex: 10;
+  }
+  #buttons-container {
+    flex: 1;
+  }
+  span {
+    font-size: larger;
+  }
+  .image-button {
+    flex: 1;
+    width: 100%;
+    object-fit: contain;
+    transform: scale(0.5);
+    transition: transform 0.5s cubic-bezier(.21,1.22,.47,1.6);
+  }
+  a {
+    color: var(--link-color);
+  }
+</style></head><body>
+  <div id="container">
+    <div id="buttons-container">
+      <img class="image-button" id="resume" src="images/home.png"/>
+      <img class="image-button" id="projects" src="images/joystick.png"/>
+      <img class="image-button" id="info" src="images/info.png"/>
+    </div>
+    <div id="section-container">
+      <div id="resume">
+        <h1>Experiences Resume</h1>
+        <span>🌐Web Development (Vanilla): 2 years</span><br/>
+        <span>- Web Development (JQuery): ~2 months</span><br/>
+        <span>🎮Lua (Love2D): 3 months</span><br/>
+        <span>🎧FL Studio: 2 years</span><br/>
+        <span>🌱Rust: < 1 month</span><br/>
+      </div>
+      <div id="projects">
+        <h1>Projects Resume</h1>
+        <span>None I'm proud of at the moment!</span><br/>
+      </div>
+      <div id="info">
+        <h1>About Me!</h1>
+        <span>DOB: 09/19/09</span><br/>
+        <span>🎧💻 Programmer and Music Producer</span><br/>
+        <span>I use arch btw</span><br/>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
