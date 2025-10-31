@@ -1,6 +1,6 @@
 let stamps = [
     {
-        innerText: "Hello! I am 16 years old and a programmer in Javascript, Lua!\nSo far i don't have much but one day i'll have an amazing resume!\n-"
+        innerText: "Hello! I am 16 years old and a programmer!\nidk\n-"
     },
     {
         innerText: "Stamps vv"
